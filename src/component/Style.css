@@ -1,0 +1,288 @@
+.containe {
+  height: 450px;
+  width: 55%;
+  background-image: url("/images/hero.png");
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Timer Box */
+.timer-box{
+   position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+  /* border: 2px solid #00ff88; */
+  border-radius: 10px;
+  padding: 10px 20px;
+  gap: 30px;
+  z-index: 1;
+  font-weight: lighter;
+gap: 50px;
+
+}
+
+
+/* Button Floating in Middle */
+.btn-chat {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Bottom Overlay */
+.updates {
+  width: 100%;
+  height: 120px;
+  background-color: #0d611c;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 10px 15px;
+  z-index: 0;
+}
+.label{
+  font-size: 10px
+}
+.digit{
+  font-weight: bold;
+}
+.vs-container{
+  display: flex;
+  flex-direction: row;
+padding: 10px 15px ;
+gap: 50px;
+   position: absolute;
+  bottom: 52%;
+  left: 27%;
+}
+.xg-contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.others-conntain{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgss{
+  width: 25px;
+  height: 20px;
+  margin-top: 20px;
+}
+.imgs{
+width: 66.38px;
+height: 66px;
+}
+
+.framer21{
+  position: absolute;
+  top: 10%;
+  left: 25px;
+  
+}
+.framer21 img{
+  width: 100%;
+}
+.framer72{
+  position: absolute;
+  top: 3%;
+  left: 43%;
+}
+.framer72 img{
+  width: 100px;
+}
+
+
+
+
+
+.custom-nav-link {
+  position: relative;
+  color: white !important;
+  transition: color 1s ease;
+  padding-bottom: 5px;
+}
+
+.custom-nav-link.active {
+  color: #18c739 !important;
+  font-weight: bold;
+}
+
+.custom-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #18c739;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 766px) and (min-width: 300px) {
+  .containe {
+    height: 300px;
+    width: 100%;
+    margin-left: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .updates {
+    height: 90px;
+  }
+
+  .btn-chat {
+    bottom: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding: 10px 10px; */
+    font-family: Arial;
+   
+    padding: 6px 10px;
+    font-size: 12px;
+    
+  }
+
+  
+  .timer-box{
+    bottom: 45%;
+    gap: 20px;
+    top: 40%;
+  }
+.vs-container{
+    bottom: 58%;
+}
+ .imgs {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;     /* Ensure it's at the start */
+    margin-right: auto; /* Push other things to the right */
+    display: block;     /* Ensure block-level behavior */
+    
+  }
+
+.texts{
+  font-size: 10px;
+  margin-left: -20px;
+}
+
+.framer72{
+  
+  /* padding-top: 5px; */
+  padding-bottom:20%;
+
+  left: 40%;
+}
+.framer21{
+  /* left: -1%; */
+  /* padding-left: 5%; */
+  padding-right: 5%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* Tablet and Desktop Styles */
+@media (min-width: 767px) {
+  .containe {
+    width: 55%;
+    height: 450px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .btn-chat {
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .timer-box {
+    bottom: 40%;
+    gap: 50px;
+  }
+
+  .vs-container {
+    bottom: 52%;
+    left: 20%;
+    gap: 50px;
+  }
+
+  .imgs {
+    width: 66.38px;
+    height: 66px;
+    margin-left: 0;
+  }
+
+  .texts {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .framer21 {
+    top: 10%;
+    left: 25px;
+    padding-right: 0;
+  }
+
+  .framer72 {
+    top: 3%;
+    left: 43%;
+    padding-bottom: 0;
+  }
+}
