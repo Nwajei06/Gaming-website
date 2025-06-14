@@ -20,7 +20,7 @@ function Index() {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {["News", "Community", "Tournament", "Company", "Shop"].map(link => (
+            {[ "Home", "News", "Community", "Tournament", "Company", "Shop"].map(link => (
               <li className="nav-item" key={link}>
                 <a
                   className={`nav-link custom-nav-link ${active === link ? "active" : ""}`}
