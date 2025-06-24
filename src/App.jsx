@@ -7,6 +7,7 @@ import Index from './component/Index';
 import Submerch from './component/Submerch';
 import Sponsorslogo from './component/Sponsorslogo';
 import Caption from './component/Caption';
+import Recentvedios from './component/Recentvideos';
 function App() {
 
 
@@ -17,6 +18,7 @@ function App() {
     <Submerch/>
     <Sponsorslogo />
 <Caption />
+<Recentvedios/>
     </div>
   );
 }
