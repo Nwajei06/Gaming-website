@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from  "react-router-dom"
 function Caption() {
     return (
         <div className='caption-container'>
@@ -13,8 +13,7 @@ function Caption() {
                  </div>
                 <div className="imga2"><img src="/images/second.png" alt="" /></div>
                 <div className="imga3">We generate new Ideas and approach <br /><br />
-                <span className='inno'><img src="/images/inno.png" alt="" /></span><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                 <button className="btnwin btn btn-light">More info</button>
+                <span ><img src="/images/inno.png" alt="" /></span>
                 </div>
             </div>
 
@@ -30,7 +29,7 @@ function Caption() {
                 <div className="but">
                 <button type="button" className="at btn  border-white btn-outline-light">Your email address</button>
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <button className="btn btn-light text-dark">Sign Up</button>
+          <Link to="/signup">  <button className="btn btn-light text-dark">Sign Up</button></Link>
 
             </div>
             </div>

@@ -14,9 +14,9 @@ function Hero() {
                     <img src="/images/framer.png" alt="" />
                 </div>
                 <div className="vs-container">
-                    <div className="xg-contain"><img className='imgs' src="/images/wlogo.png" alt="" srcset="" /> <span className='texts'>XG</span> </div>
-                    <div className="versus"><img className='imgss' src="/images/vs.png" alt="" srcset="" /></div>
-                    <div className="others-conntain"><img className='imgs' src="/images/orther.png" alt="" srcset="" /><span className='texts   '>OTHERS</span> </div>
+                    <div className="xg-contain"><img className='imgs' src="/images/wlogo.png" alt=""  /> <span className='texts'>XG</span> </div>
+                    <div className="versus"><img className='imgss' src="/images/vs.png" alt=""  /></div>
+                    <div className="others-conntain"><img className='imgs' src="/images/orther.png" alt="" /><span className='texts   '>OTHERS</span> </div>
 
                 </div>
                 <div className="dates">

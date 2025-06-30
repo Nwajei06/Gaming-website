@@ -239,7 +239,8 @@ padding: 18px;
 .sh{
  display: flex;
 flex-direction: row;
- width: 100%;
+ width: 90%;
+ margin-left: 70px;
   border: #18c739 1px solid;
   height: 200px;
   border-radius: 20px;
@@ -276,16 +277,42 @@ width: 135px;
   font-size: smaller;
 font-weight: bold;
 }
+.recentv-container{
+  padding-top: 10%;
+  margin-left: 60px;
+
+}
 
 
+#aa i{
+  background-color: #fff;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  border-radius: 5px;
+} 
 
+/* 
+.dd #wwlogo{
+  width: 200px;
+} */
 
+#aa #disc{
+  background-color: #5865F2;
+}
+.bf{
+font-size: smaller;
+font-weight: bold;
+width: 0px;
+}
 
-
-
-
-
-
+.dx{
+  font-size: smaller;
+  opacity: 0.7;
+}
 
 
 /* Mobile Styles */
@@ -485,9 +512,6 @@ width: 50%;
     padding: 10px;
     font-size: 1rem;
   }
-/* .recentv-container{
-  padding-top: 30%;
-} */
 
 
 }

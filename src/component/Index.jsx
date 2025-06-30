@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { Link } from "react-router-dom";
+// import { Link } from 'react-router-dom';
 function Index() {
   const [active, setActive] = useState("News");
 
@@ -38,8 +39,8 @@ function Index() {
             <a href="#" className="text-white"><i className="fas fa-shopping-cart"></i></a>
             <a href="#" className="text-white"><i className="fas fa-bell"></i></a>
 
-            <button className="btn btn-outline-light border-white">Login</button>
-            <button className="btn btn-light text-dark">Sign Up</button>
+           <Link to="/login"><button className="btn btn-outline-light border-white">Login</button></Link> 
+           <Link to="signin"> <button className="btn btn-light text-dark">Sign Up</button></Link>
           </div>
         </div>
       </div>
