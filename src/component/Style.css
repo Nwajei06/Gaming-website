@@ -315,6 +315,201 @@ width: 0px;
 }
 
 
+input::placeholder {
+  color: #ccc !important;
+  opacity: 1; /* Ensures it's fully visible */
+}
+.news-headers{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+  
+}
+.fas{
+  cursor: pointer;
+}
+.blogs{
+  display: flex;
+  flex-direction: row;
+  gap: 8%;
+
+}
+.news-containe{
+  height: auto;
+}
+.blog-as-one{
+  margin-left: 65px;
+  padding-top: 70px;
+  width: 40%;
+}
+.blog-one{
+  width: 400px;
+}
+.blog-one img{
+  width: 390px;
+}
+.blog-as-two{
+   margin-left: 70px;
+  padding-top: 70px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.blog-text{
+  font-size: small  ;
+  opacity: 0.7;
+}
+.two-one{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.two-one img{
+  width: 100px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-logo-wrapper {
+align-self: flex-start;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+/* Grid for About, Shop, Terms */
+.footer-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Social icons */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  color: #bbb;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+/* Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile Styles */
 @media (max-width: 766px) and (min-width: 300px) {
   .overall {
@@ -495,24 +690,128 @@ width: 50%;
     border-radius: 20px;
   }
 
-  .sh {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    height: auto;
+  
+ .sh {
+  display: flex;               
+  flex-direction: column;
+  align-items: center;         
+  padding: 20px;
+  gap: 20px;
+  height: auto;
+  text-align: center;          /* Optional: center text too */
+
+  margin-left: 20px;
   }
 
   .frame76 img {
     width: 100%;
     max-width: 200px;
   }
-
   .but button {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
   }
+ .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .footer-socials {
+    margin-left: 0;
+    /* margin-top: -20px; */
+    justify-content: center;
+  }
+/* .blogs{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+
+} */
+
+.blogs {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+
+.news-containe {
+  height: auto;
+}
+
+.blog-as-one,
+.blog-as-two {
+  margin-left: 65px;
+  padding-top: 70px;
+  width: 40%;
+}
+
+.blog-one {
+  width: 100%;
+}
+
+.blog-one img {
+  width: 100%;
+  max-width: 390px;
+}
+
+.blog-text {
+  font-size: small;
+  opacity: 0.7;
+}
+
+/* ✅ Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .blogs {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .blog-as-one,
+  .blog-as-two {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 30px;
+  }
+
+  .blog-one img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+ .news-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  text-align: center;
+  gap: 10px;
+}
+
+.news-headers img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news-headers p {
+  max-width: 90%;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Input group responsiveness */
+.news-headers .input-group {
+  width: 90%;
+  max-width: 300px;
+}
 
 }
 

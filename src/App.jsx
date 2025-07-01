@@ -11,6 +11,7 @@ import Caption from './component/Caption';
 import Recentvedios from './component/Recentvideos';
 import Login from './component/Login';
 import Signup from './component/Signup';
+import News from './component/News';
 function App() {
 
 
@@ -26,13 +27,14 @@ function App() {
               <Submerch />
               <Sponsorslogo />
               <Caption />
-              {/* <Recentvedios /> */}
+              <Recentvedios />
             </>
           } 
         />
  
         <Route path="login" element={<Login/>}/>
         <Route path="signup" element={<Signup/>}/>
+        <Route path="news" element={<News/>}/>
       </Routes>
      
     </div>

@@ -59,11 +59,13 @@ function Signup() {
         <form className="text-start">
           <div className="mb-3">
             <label className="form-label">Email</label>
-            <input
-              type="email"
-              className="form-control bg-dark text-white border-secondary"
-              placeholder="Email"
-            />
+          <input
+  type="email"
+  className="form-control bg-dark text-white border-secondary"
+  placeholder="Email"
+  style={{ color: 'white', '::placeholder': { color: 'gray' } }}
+/>
+
           </div>
           <div className="mb-2">
             <label className="form-label">Password</label>
