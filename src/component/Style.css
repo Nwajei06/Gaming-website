@@ -459,6 +459,132 @@ align-self: flex-start;
   color: #fff;
 }
 
+
+.tots-container{
+ 
+  width: 100%;
+  height: 430px;
+  object-fit: contain;
+  border-radius: 15px;
+  overflow: hidden;
+
+
+}
+#sub{
+  width: 30%;
+  border-radius: 20px;
+  height: auto;
+  border-radius: 20px;
+  /* background-color: white; */
+
+}
+.video-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 50px;
+}
+.video-container img{
+  width: 20px;
+}
+#sub video{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+
+}
+.videoone{
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+  /* padding-left: 20px; */
+}
+.videotwo{
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+}
+.videothree{
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+}
+.caption{
+margin-top: 50px;
+font-size: small;
+}
+.sub-cap{
+  font-size: 10px;
+  opacity: 0.7;
+}
+progress {
+  width: 100%;
+  height: 4px; /* Slim height */
+  appearance: none; /* Remove default styles */
+}
+.progress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: grey;
+}
+/* WebKit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #1ac739;
+  border-radius: 3px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background-color: green;
+  border-radius: 3px;
+}
+.grey{
+  width: 100%;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #22251e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.prize{
+  opacity: 0.7;
+  font-size: small;
+}
+.cash{
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer-columns {
@@ -812,8 +938,172 @@ width: 50%;
   width: 90%;
   max-width: 300px;
 }
-
+/* .caption{
+font-size: smaller;
+font-weight: lighter;
+margin-top: -43px;
 }
+.progress{
+margin-top: -90px;
+
+} */
+
+.tots-container {
+  
+    height: 300px; /* Reduced height for mobile */
+    padding: 0 10px;
+  
+}
+
+#sub {
+  width: 30%;
+  border-radius: 20px;
+  height: auto;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 50px;
+}
+
+.video-container img {
+  width: 20px;
+}
+
+#sub video {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.videoone,
+.videotwo,
+.videothree {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.caption {
+  margin-top: 50px;
+  font-size: small;
+}
+
+.sub-cap {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+progress {
+  width: 100%;
+  height: 4px; /* Slim height */
+  appearance: none; /* Remove default styles */
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: grey;
+}
+
+/* WebKit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #1ac739;
+  border-radius: 3px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background-color: green;
+  border-radius: 3px;
+}
+
+.grey {
+  width: 100%;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #22251e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.prize {
+  opacity: 0.7;
+  font-size: small;
+}
+
+.cash {
+  font-size: small;
+}
+
+/* ✅ Responsive: Stack videos on mobile */
+
+  .video-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .videoone,
+  .videotwo,
+  .videothree {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #sub {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .caption {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .sub-cap {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .grey {
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .video-banner {
+    height: auto;
+    max-height: 200px;
+    border-radius: 15px;
+  }
+
+  .progress {
+    padding: 5px;
+  }
+
+  .prize,
+  .cash {
+    font-size: 12px;
+  }
+}
+
+
 
 
 
@@ -939,4 +1229,60 @@ margin-left: 20px;
     padding: 12px 20px;
     font-size: 1.1rem;
   }
+
+
+  /* ✅ iPad/tablet screens: 768px to 1024px */
+
+  .video-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .videoone,
+  .videotwo,
+  .videothree {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #sub {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .caption {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .sub-cap {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .video-banner {
+    height: auto;
+    max-height: 220px;
+    border-radius: 15px;
+  }
+
+  .grey {
+    padding: 12px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .prize,
+  .cash {
+    font-size: 13px;
+  }
+
+  .progress {
+    padding: 6px;
+  }
+
 }

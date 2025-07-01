@@ -6,12 +6,14 @@ import Slideshow from './Slideshow'; // ✅ Import slideshow
 function Hero() {
     return (
         <div className='overall'>
+            
             <div className="containe">
 
                 {/* ✅ Slideshow added here */}
-                <Slideshow />
+                 {/* <Slideshow /> */}
 
                 <div className="framer72">
+                  
                     <img src="/images/codmbout.png" alt="" />
                 </div>
 

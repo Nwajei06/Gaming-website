@@ -12,17 +12,19 @@ import Recentvedios from './component/Recentvideos';
 import Login from './component/Login';
 import Signup from './component/Signup';
 import News from './component/News';
+import Tournaments from './component/Tournaments';
 function App() {
 
 
   return (
     <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', paddingLeft:'10px',paddingRight:'20px'}}>
+        <Index />
       <Routes>
     <Route 
           path="/" 
           element={
             <>
-              <Index />
+            
               <Hero />
               <Submerch />
               <Sponsorslogo />
@@ -35,6 +37,7 @@ function App() {
         <Route path="login" element={<Login/>}/>
         <Route path="signup" element={<Signup/>}/>
         <Route path="news" element={<News/>}/>
+        <Route path="tournaments" element={<Tournaments/>}/>
       </Routes>
      
     </div>

@@ -1,54 +1,73 @@
-import React from 'react';
-import Timer from './Timer';
-import Side from './Side';
-import Slideshow from './Slideshow'; // ✅ Add this line
+// Slideshow.js
+import React, { useState, useEffect } from 'react';
 
-function Hero() {
+const images = [
+   "/images/war.png",
+  "/images/fifa.png",
+   "/images/chess.png",
+  "/images/shadow.png"
+  
+];
+
+function Slideshow() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className='overall'>
-      <div className="containe">
-
-        {/* ✅ Slideshow added here */}
-        <Slideshow />
-
-        <div className="framer72">
-          <img src="/images/codmbout.png" alt="" />
-        </div>
-
-        <div className="framer21">  
-          <img src="/images/framer.png" alt="" />
-        </div>
-
-        <div className="vs-container">
-          <div className="xg-contain">
-            <img className='imgs' src="/images/wlogo.png" alt="" />
-            <span className='texts'>XG</span>
-          </div>
-
-          <div className="versus">
-            <img className='imgss' src="/images/vs.png" alt="" />
-          </div>
-
-          <div className="others-conntain">
-            <img className='imgs' src="/images/orther.png" alt="" />
-            <span className='texts'>OTHERS</span>
-          </div>
-        </div>
-
-        <div className="dates">
-          <Timer targetDate={new Date(Date.now() + 40 * 24 * 60 * 60 * 1000)} />
-        </div>
-
-        <button type="button" className="btn-chat btn btn-light">Join The Chat</button>
-
-        <div className="updates">XG</div>
-      </div>
-
-      <div className="sides">
-        <Side />
+    <div style={{
+      ...styles.wrapper,
+      backgroundImage: `url(${images[index]})`,
+    }}>
+      <div style={styles.dots}>
+        {images.map((_, i) => (
+          <span
+            key={i}
+            onClick={() => setIndex(i)}
+            style={{
+              ...styles.dot,
+              backgroundColor: index === i ? "#fff" : "#777"
+            }}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
-export default Hero;
+const styles = {
+ wrapper: {
+  width: '100%',
+  height: '100%',
+  minHeight: '250px',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  borderRadius: '15px',
+  position: 'relative',
+  marginBottom: '20px',
+  transition: 'background-image 0.5s ease-in-out',
+}
+,
+  dots: {
+    position: 'absolute',
+    bottom: '10px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    display: 'flex',
+    gap: '8px'
+  },
+  dot: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50%',
+    backgroundColor: '#777',
+    cursor: 'pointer'
+  }
+};
+
+export default Slideshow;
