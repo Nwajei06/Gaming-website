@@ -205,7 +205,7 @@ function Tournaments() {
                             <img src="/images/wwlogo.png" alt="" />XG <br /> <br />
 
                             CONSOLE GAMING 
-                            <p className="sub-cap">Ps5</p>
+                            <p className="sub-cap">PS5</p>
 
 
                             <hr />
