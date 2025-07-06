@@ -57,16 +57,58 @@ gap: 50px;
 /* Bottom Overlay */
 .updates {
   width: 100%;
-  height: 120px;
-  background-color: #0d611c;
+  height: 130px;
+  /* background-color: #0d611c; */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 0.7;
   position: absolute;
   bottom: 0;
   color: white;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   z-index: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+#rowone{
+  background-color: black;
+
+}
+.rowone{
+  width: 30%;
+  background-color: #0d611c;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  font-size: small;
+  padding: 20px;
+}
+#ros{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#ros img{
+  width: 100px;
+  height: 20px;
+}
+#rose{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#rose img{
+  width: 100px;
+  height:50px;
+}
+#ros2 img{
+  width: 20px;
+}
+#ros2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .label{
   font-size: 10px
@@ -584,7 +626,6 @@ progress::-moz-progress-bar {
 
 
 
-
 /* Responsive */
 @media (max-width: 768px) {
   .footer-columns {
@@ -657,12 +698,52 @@ progress::-moz-progress-bar {
 
   .updates {
     height: 80px;
-    font-size: 12px;
-    padding: 8px;
+    font-size: 5px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
+#rowone{
+  background-color: black;
 
+}
+#ros p{
+font-size: xx-small;
+}
+.rowone{
+  width: 25%;
+  background-color: #0d611c;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  font-size: small;
+  /* padding: 20px; */
+}
+/* #ros{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} */
+#ros img{
+  width: 30px;
+  height: 15px;
+}
+#rose{
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+#rose img{
+  width: 50px;
+  height:10px;
+}
+#ros2 img{
+  width: 20px;
+}
+#ros2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
   .btn-chat {
     bottom: 30%;
     left: 50%;
@@ -1101,6 +1182,8 @@ progress::-moz-progress-bar {
   .cash {
     font-size: 12px;
   }
+
+  
 }
 
 

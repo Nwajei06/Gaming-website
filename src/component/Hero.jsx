@@ -43,7 +43,50 @@ function Hero() {
 
                 <button type="button" className="btn-chat btn btn-light">Join The Chat</button>
 
-                <div className="updates">XG</div>
+                <div className="updates">
+                    
+                        <div id='rowone' className="rowone">
+                             <span id='ros'><img  src="/images/codmbout.png" alt="" /> <p> Best of 5</p>
+                             
+                             {/* <img src="/images/wwlogo.png" alt="" /> */}
+                             </span>
+                             <span id='ros2'>
+                               <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
+                          <span><img src="/images/orther.png" alt="" />  &nbsp; NGC</span>   
+                             </span>
+                                </div>
+                        <div className="rowone">
+                             <span id='ros'> <p> Free fire cup tournament 4v4</p>
+                             
+                             {/* <img src="/images/wwlogo.png" alt="" /> */}
+                             </span>
+                             <span id='ros2'>
+                               <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
+                          <span><img src="/images/hm1.png" alt="" />  &nbsp; NGC</span>   
+                             </span>    
+                        </div>
+                        <div className="rowone">
+                             <span id='ros'> <p> Chess premiere - best of 3</p>
+                             
+                             {/* <img src="/images/wwlogo.png" alt="" /> */}
+                             </span>
+                             <span id='ros2'>
+                               <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
+                          <span><img src="/images/hm.png" alt="" />  &nbsp; NGC</span>   
+                             </span>
+                        </div>
+                        <div className="rowone">
+                             <span id='rose'><img  src="/images/nmu.png" alt="" /> <p> Join our community to know what's happening</p>
+                             
+                             {/* <img src="/images/wwlogo.png" alt="" /> */}
+                             </span>
+                             <span id='ros2'>
+                               {/* <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span>  */}
+                          {/* <span><img src="/images/orther.png" alt="" />  &nbsp; NGC</span>    */}
+                             </span>
+                        </div>
+                    
+                </div>
             </div>
 
             <div className="sides">
