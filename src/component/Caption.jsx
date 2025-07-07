@@ -8,12 +8,23 @@ function Caption() {
             </div> <br /><br />
             <div className="imgseries">
                 <div className="imga1">The leading Esport organisation in Nigeria <br /><br />
+              <Link to="/company" >
+                 
                     <span className='wewin'><img src="/images/wewin.png" alt="" /></span> <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <button className="btnwin btn btn-light">More info</button>
+                    </Link>
                 </div>
-                <div className="imga2"><img src="/images/second.png" alt="" /></div>
+              <Link to="/company" >
+               <div className="imga2"><img src="/images/second.png" alt="" /></div>
+              </Link> 
+              
                 <div className="imga3">We generate new Ideas and approach <br /><br />
-                    <span ><img src="/images/inno.png" alt="" /></span>
+                <Link to="/company" > 
+                 <span ><img src="/images/inno.png" alt="" /></span> <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <button className="btnwin btn btn-light">More info</button>
+              </Link>
+                   
+
                 </div>
             </div>
 

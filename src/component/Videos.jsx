@@ -74,6 +74,7 @@ function Videos() {
                 overflow: 'hidden',
                 fontSize: '11px',
                 color: '#fff',
+                marginLeft:"27px"
               }}
             >
               <video

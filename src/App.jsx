@@ -13,6 +13,9 @@ import Login from './component/Login';
 import Signup from './component/Signup';
 import News from './component/News';
 import Tournaments from './component/Tournaments';
+import Community from './component/Community';
+import Shop from './component/Shop';
+import Company from './component/Company';
 function App() {
 
 
@@ -38,6 +41,9 @@ function App() {
         <Route path="signup" element={<Signup/>}/>
         <Route path="news" element={<News/>}/>
         <Route path="tournaments" element={<Tournaments/>}/>
+        <Route path="community" element={<Community/>}/>
+        <Route path="company" element={<Company/>}/>
+        <Route path="shop" element={<Shop/>}/>
       </Routes>
      
     </div>

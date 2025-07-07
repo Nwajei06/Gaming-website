@@ -9,8 +9,9 @@ function Recentvedios() {
         <div className="recentv"> <br /><br />
             <h5>Recent videos</h5><br />
             <Videos/> <br /><br />
-          <h2> &nbsp;&nbsp;  Upcoming Tournaments</h2>
-              <Ongoing/> <hr /> <br /> 
+          <img id='up' src="/images/up.png" alt="" /> <br /><br />
+          
+              <Ongoing/> <br /><br /> <hr /> <br /> 
             <Footer/>
         </div>
     </div>

@@ -4,28 +4,28 @@ function Ongoing() {
   const videoData = [
     {
       src: "/images/done.png",
-      caption: "LOCKED IN & ZONED OUT - JUST ME VS. THE GAME.",
-      subcap: "Pc games included",
+      caption: "CODM ROOM MATCH PHASE 1",
+      subcap: "Free Entry, mobile",
     },
     {
       src: "/images/dtwo.png",
-      caption: "E-Sports Pubg Mobile",
-      subcap: "Pc games included",
+      caption: "FREE FIRE CUP 2025(CLAS SQUAD)",
+      subcap: "Free Entry, mobile",
     },
     {
       src: "/images/dthree.png",
-      caption: "NO MERCY",
-      subcap: "Board games included",
+      caption: "XG E FOOTBALL ELIMINATION BOUT",
+      subcap: "Free Entry, mobile",
     },
     {
       src: "/images/dlsast.png",
-      caption: "GOOD GAMES SETUP",
-      subcap: "Pc games included",
+      caption: "XG MOBILE LEGENDS SCRIMS",
+      subcap: "Free Entry, mobile",
     },
     {
       src: "/images/dfour.png",
-      caption: "REAL LIFE EXPERIENCE",
-      subcap: "Live gaming",
+      caption: "CHESS ROYALE  CHECKMATE FRENZY",
+      subcap: "Free Entry, mobile",
     },
     {
       src: "/images/blog1.png",
@@ -34,7 +34,7 @@ function Ongoing() {
     },
     {
       src: "/images/blog2.png",
-      caption: "REAL LIFE EXPERIENCE",
+      caption: "PC GAMING (OPEN WORLD)",
       subcap: "Live gaming",
     },
   ];
@@ -68,6 +68,7 @@ function Ongoing() {
           fontSize: '11px',
           color: '#fff',
           minWidth: '200px',
+          marginLeft:'25px'
         }}
       >
         <img

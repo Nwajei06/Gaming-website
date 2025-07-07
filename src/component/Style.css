@@ -607,11 +607,62 @@ progress::-moz-progress-bar {
 }
 
 
+.com-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texts-all{
+  margin-top: -5%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.create{
+  width: 150px;
+}
 
+.classes{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.one{
+  width: 750px;
+  height: 80px;
+  border: #0d611c solid 1px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+.gos{
+  text-decoration: none;
+  font-size:small ;
+}
+/* In your CSS file */
+.social-icon {
+  transition: transform 0.3s ease-in-out;
+  padding-left: 30px;
 
+  text-decoration: none;
+}
 
-
-
+.social-icon:hover {
+  transform: scale(1.2);
+}
+hr{
+  border: #fff 1px solid;
+}
+#up{
+  width: 300px;
+  margin-left: 35px;
+}
+h5{
+  margin-left: 35px;
+}
 
 
 
@@ -679,6 +730,61 @@ progress::-moz-progress-bar {
 
 /* Mobile Styles */
 @media (max-width: 766px) and (min-width: 300px) {
+
+.com-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texts-all{
+  margin-top: -5%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.create{
+  width: 150px;
+}
+
+.classes{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.one {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  border: #0d611c solid 1px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  overflow: hidden;
+  gap: 10px;
+}
+.gos {
+  text-decoration: none;
+  font-size: 13px;
+  color:  inherit;
+  line-height: 1.4;
+}
+
+/* In your CSS file */
+.social-icon {
+  font-size: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+  
   .overall {
     display: flex;
     flex-direction: column;
@@ -712,7 +818,6 @@ font-size: xx-small;
 .rowone{
   width: 25%;
   background-color: #0d611c;
-  display: flex;
   /* align-items: center; */
   flex-direction: column;
   font-size: small;
@@ -1367,5 +1472,54 @@ margin-left: 20px;
   .progress {
     padding: 6px;
   }
+.com-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texts-all{
+  margin-top: -5%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.create{
+  width: 150px;
+}
+
+.classes{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.one {
+  width: 750px;
+  /* max-width: 350px; */
+  /* height: 500px; */
+  border: #0d611c solid 1px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  overflow: hidden;
+  gap: 10px;
+}
+.gos {
+  text-decoration: none;
+  font-size: 13px;
+  color:  inherit;
+  line-height: 1.4;
+}
+
+/* In your CSS file */
+.social-icon {
+  font-size: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
 
 }

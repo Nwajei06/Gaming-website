@@ -1,7 +1,7 @@
 import React from 'react';
 import Timer from './Timer';
 import Side from './Side';
-import Slideshow from './Slideshow'; // ✅ Import slideshow
+import {Link} from 'react-router-dom'
 
 function Hero() {
     return (
@@ -41,7 +41,9 @@ function Hero() {
                     <Timer targetDate={new Date(Date.now() + 40 * 24 * 60 * 60 * 1000)} />
                 </div>
 
+                <Link to="/community">
                 <button type="button" className="btn-chat btn btn-light">Join The Chat</button>
+                </Link>
 
                 <div className="updates">
                     
