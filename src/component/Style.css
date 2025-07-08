@@ -1291,7 +1291,9 @@ progress::-moz-progress-bar {
   
 }
 
-
+#down{
+  width: 50px;
+}
 
 
 

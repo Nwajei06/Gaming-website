@@ -16,12 +16,15 @@ import Tournaments from './component/Tournaments';
 import Community from './component/Community';
 import Shop from './component/Shop';
 import Company from './component/Company';
+import Scroll from './component/Scroll';
 function App() {
 
 
   return (
     <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', paddingLeft:'10px',paddingRight:'20px'}}>
         <Index />
+        <Scroll/>
+
       <Routes>
     <Route 
           path="/" 
@@ -35,8 +38,8 @@ function App() {
               <Recentvedios />
             </>
           } 
+        
         />
- 
         <Route path="login" element={<Login/>}/>
         <Route path="signup" element={<Signup/>}/>
         <Route path="news" element={<News/>}/>
