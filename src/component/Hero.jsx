@@ -88,7 +88,7 @@ function Hero() {
                              </span>
                         </div>
                     
-                </div>c 
+                </div>
             </div>
 
             <div className="sides">
