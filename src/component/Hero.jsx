@@ -74,7 +74,7 @@ function Hero() {
                              </span>
                              <span id='ros2'>
                                <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
-                          <span><img src="/images/hm.png" alt="" />  &nbsp; NGC</span>   
+                          <span><img src="/images/hm1.png" alt="" />  &nbsp; NGC</span>   
                              </span>
                         </div>
                         <div className="rowone">
@@ -88,7 +88,7 @@ function Hero() {
                              </span>
                         </div>
                     
-                </div>
+                </div>c 
             </div>
 
             <div className="sides">

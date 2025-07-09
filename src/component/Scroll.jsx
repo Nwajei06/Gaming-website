@@ -32,12 +32,12 @@ function Scroll() {
             position: "fixed",
             bottom: "30px",
             right: "30px",
-            padding: "10px 15px",
-            backgroundColor: "#000",
+            // padding: "10px 15px",
+            backgroundColor: "transparent",
             color: "#fff",
             border: "none",
-            borderRadius: "50%",
-            fontSize: "18px",
+            borderRadius: "100%",
+            fontSize: "1px",
             cursor: "pointer",
             zIndex: 999
           }}
