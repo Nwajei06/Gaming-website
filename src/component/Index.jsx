@@ -4,11 +4,13 @@ import { Link, useLocation } from "react-router-dom";
 function Index() {
   const location = useLocation();
   const currentPath = location.pathname;
+
+  // ✅ Changed from 992 to 768
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 992);
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -24,7 +26,8 @@ function Index() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg custom-navbar">
+      {/* ✅ Updated class below */}
+      <nav className="navbar navbar-expand-md custom-navbar">
         <div className="container-fluid position-relative">
 
           {/* Mobile: Hamburger + Search */}
@@ -47,8 +50,8 @@ function Index() {
 
           {/* Desktop nav */}
           {!isMobile && (
-            <div className="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <div className="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-md-0">
                 {links.map(({ name, path }) => (
                   <li className="nav-item" key={name}>
                     <Link

@@ -38,7 +38,7 @@ function Community() {
                     </Link>
                     </div>
                     <div className="one">   <Link
-                        href="https://www.instagram.com"
+                      to="https://www.instagram.com/xtremegangng_/#"
                         target="_blank"
                         rel="noopener noreferrer"
                         
@@ -54,7 +54,7 @@ function Community() {
                     </Link>
                     </div>
                     <div className="one">    <Link
-                        href="https://twitter.com"
+                       to="https://x.com/XtremeGangNG"
                         target="_blank"
                         className="social-icon"
 
@@ -69,15 +69,15 @@ function Community() {
                     </Link>
                     </div>
                     <div className="one">  <Link
-                        href="https://discord.com"
+                        to="https://www.tiktok.com/@xtremegangng"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-icon"
 
-                        style={{ color: '#5865F2', fontSize: '30px', marginRight: '15px' }}
+                        style={{ color: '#fff', fontSize: '30px', marginRight: '15px' }}
                     >
-                        <i className="fab fa-discord"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span className="gos">
+                       <i class="fab fa-tiktok"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span className="gos"  style={{ opacity:'0.9' }}>
                         Hop into the action on Discord chat, chill, and connect with the community 24/7!
 
                         </span>
@@ -88,7 +88,7 @@ function Community() {
                 </div>
 
                 <div className="side-bars">
-                    <img className='create   ' src="/images/create.png" alt="" /> <br /> <br />
+                  <img className='create   ' src="/images/create.png" alt="" /> <br /> <br />
                     <img src="/images/mantiside.png" alt="" /><br /> <br />
                     <img src="/images/codmside.png" alt="" /> <br /> <br />
                     <img src="/images/fside.png" alt="" /><br /> <br />

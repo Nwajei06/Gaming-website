@@ -47,7 +47,7 @@ function Videos() {
 
   return (
     <div className="video-container">
-    <Link to="/tournaments"> <div
+    <Link to="/tournaments" className='vido'> <div
         style={{
           overflowX: 'auto',
           whiteSpace: 'nowrap',
@@ -130,8 +130,8 @@ function Videos() {
                   fontSize: '10px',
                 }}
               >
-                <div style={{ opacity: 0.6 }}>Prize pool</div>
-                <div>Cash</div>
+                <div style={{ opacity: 0.6 }}></div>
+                <div></div>
               </div>
             </div>
           ))}

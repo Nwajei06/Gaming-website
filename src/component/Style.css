@@ -697,7 +697,9 @@ h5{
   width: 70%;
   height: auto;
 }
-
+.vido{
+  text-decoration: none;
+}
 
 
 
@@ -766,6 +768,11 @@ h5{
 
 /* Mobile Styles */
 @media (max-width: 766px) and (min-width: 300px) {
+
+.dd{
+display: none;
+}
+
 
   .custom-nav-link {
   color: white;
@@ -1513,6 +1520,7 @@ padding:20px ;
   }
 .imga2 {
   height: 400px;
+  width: 100%;
 }
   .imga2 img {
     width: 100%;
@@ -1644,5 +1652,6 @@ margin-left: 20px;
 .social-icon:hover {
   transform: scale(1.2);
 }
+
 
 }

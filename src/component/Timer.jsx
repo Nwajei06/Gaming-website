@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 function Timer() {
-  // ✅ Set target date once using useRef
-  const futureDateRef = useRef(new Date(Date.now() + 2 * 24 * 60 * 60 * 1000)); // 2 days from now
+  // ✅ Event is July 11, 2025 at 10:00 AM local time
+  const futureDateRef = useRef(new Date('2025-07-11T10:00:00'));
 
   const calculateTimeLeft = () => {
     const difference = +futureDateRef.current - +new Date();

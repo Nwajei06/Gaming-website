@@ -39,6 +39,7 @@ function Hero() {
 
                 <div className="dates">
                     <Timer targetDate={new Date(Date.now() + 40 * 24 * 60 * 60 * 1000)} />
+                    
                 </div>
 
                 <Link to="/community">
@@ -48,37 +49,38 @@ function Hero() {
                 <div className="updates">
                     
                         <div id='rowone' className="rowone">
-                             <span id='ros'><img  src="/images/codmbout.png" alt="" /> <p> Best of 5</p>
+                             <span id='ros'><img className='dd'  src="/images/codmbout.png" alt="" /> <p className='dd'> Best of 5</p>
                              
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
                              </span>
                              <span id='ros2'>
-                               <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
+                               <span className='dd'><img  src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
                           <span><img src="/images/orther.png" alt="" />  &nbsp; NGC</span>   
                              </span>
                                 </div>
                         <div className="rowone">
-                             <span id='ros'> <p> Free fire cup tournament 4v4</p>
+                             <span id='ros'> <p className='dd'> Free fire cup tournament 4v4</p>
                              
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
                              </span>
                              <span id='ros2'>
-                               <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
-                          <span><img src="/images/hm1.png" alt="" />  &nbsp; NGC</span>   
+                               <span className='dd'><img  src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
+                          <span><img src="/images/hm1.png" alt="" /> NGC</span>   
                              </span>    
                         </div>
                         <div className="rowone">
-                             <span id='ros'> <p> Chess premiere - best of 3</p>
+                             <span id='ros'> <p className='dd'> Chess premiere - best of 3</p>
                              
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
                              </span>
                              <span id='ros2'>
                                <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
-                          <span><img src="/images/hm1.png" alt="" />  &nbsp; NGC</span>   
+                          <span className='dd'><img src="/images/hm1.png" alt="" />  &nbsp; NGC</span>   
                              </span>
                         </div>
                         <div className="rowone">
-                             <span id='rose'><img  src="/images/nmu.png" alt="" /> <p> Join our community to know what's happening</p>
+                             <span id='rose'><img  src="/images/nmu.png" alt="" />
+                              <p className='dd'> Join our community to know what's happening</p>
                              
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
                              </span>
