@@ -31,7 +31,7 @@ function App() {
           element={
             <>
             
-              <Hero />
+              <Hero /> 
               <Submerch />
               <Sponsorslogo />
               <Caption />

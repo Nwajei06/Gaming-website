@@ -80,7 +80,7 @@ function Login() {
             <button type="submit" className="btn btn-light w-50">Log in</button>
           </div>
           <p className="text-center mt-4 mb-0 small">
-            Already have an XG Account? <Link to="#" className="text-white text-decoration-underline fw-bold">Login</Link>
+            Don't have an XG Account? <Link to="#" className="text-white text-decoration-underline fw-bold">Sign up</Link>
           </p>
         </form>
       </div>

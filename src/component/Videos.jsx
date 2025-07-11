@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 function Videos() {
   const videoData = [
@@ -46,7 +47,7 @@ function Videos() {
 
   return (
     <div className="video-container">
-      <div
+    <Link to="/tournaments"> <div
         style={{
           overflowX: 'auto',
           whiteSpace: 'nowrap',
@@ -136,6 +137,7 @@ function Videos() {
           ))}
         </div>
       </div>
+      </Link>
     </div>
   );
 }

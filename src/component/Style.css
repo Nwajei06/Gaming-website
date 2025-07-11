@@ -2,8 +2,13 @@
 display: flex;
   flex-direction: row;
   gap: 20px;
+ 
 }
 
+
+ .navbar-logo {
+  height: 40px;
+}
 
 
 .containe {
@@ -18,6 +23,7 @@ display: flex;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  margin-top: 70px;
   }
 
 /* Timer Box */
@@ -680,6 +686,17 @@ h5{
 }
 
 
+.y{
+  display: flex;
+  flex-direction: row;
+  /* padding: 50px; */
+}
+
+
+.imgl{
+  width: 70%;
+  height: auto;
+}
 
 
 
@@ -749,6 +766,81 @@ h5{
 
 /* Mobile Styles */
 @media (max-width: 766px) and (min-width: 300px) {
+
+  .custom-nav-link {
+  color: white;
+  position: relative;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  transition: color 0.3s;
+}
+
+/* Green underline animation */
+.custom-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #00ff00; /* Bright green underline */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Show underline on active or hover */
+.custom-nav-link.active::after,
+.custom-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Optional: bold on active or hover */
+.custom-nav-link.active,
+.custom-nav-link:hover {
+  opacity: 1;
+  font-weight: 500;
+  text-decoration: none;
+}
+.custom-toggler {
+    background: none;
+    border: none;
+  }
+
+  .logo-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 240px;
+  height: 100%;
+  background-color: #111;
+  z-index: 1050;
+  transition: left 0.3s ease-in-out;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1040;
+}
 
 .com-img{
   display: flex;
@@ -999,7 +1091,7 @@ width: 50%;
  .imgseries {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -1007,18 +1099,19 @@ width: 50%;
   .imga1,
   .imga2,
   .imga3 {
-    width: 90% !important;
+    width:100% !important;
     height: 400px;
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 10px;
   }
  
 
   .imga2 img {
-    width: 100%;
+    width: 110%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-left: -10px;
   }
 
   
@@ -1314,6 +1407,15 @@ progress::-moz-progress-bar {
   width: 50px;
 }
 
+.y{
+  display: flex;
+  flex-direction: column;
+}
+.imgl{
+height: 435px;
+width: 100%;
+padding:20px ;
+}
 
 
 

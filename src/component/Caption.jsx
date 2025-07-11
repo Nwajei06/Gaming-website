@@ -15,7 +15,7 @@ function Caption() {
                     </Link>
                 </div>
               <Link to="/company" >
-               <div className="imga2"><img src="/images/second.png" alt="" /></div>
+               <div className="imga2"><img src="/images/second.png" alt="" /></div> <br /><br /><br />
               </Link> 
               
                 <div className="imga3">We generate new Ideas and approach <br /><br />

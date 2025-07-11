@@ -11,8 +11,7 @@ function Community() {
                 <div className='classes'>All <br /><br />
 
                   <div className="one">   <Link
-                        href="https://wa.me/1234567890" // replace with your number
-                        target="_blank"
+                       to="https://chat.whatsapp.com/JU7rhnZbLmkIrDdYDrC5f6"               target="_blank"
                         rel="noopener noreferrer"
                         className="social-icon"
 
@@ -25,7 +24,7 @@ function Community() {
                     </Link>
                     </div>
                     <div className="one">  <Link
-                        href="https://www.linkedin.com"
+                        to='https://www.linkedin.com/company/xtremegangng/posts/?feedView=all'
                         target="_blank"
                         rel="noopener noreferrer"
                         

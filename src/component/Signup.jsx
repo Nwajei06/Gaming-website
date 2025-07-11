@@ -81,7 +81,7 @@ function Signup() {
           <p className='dx'>By signing up you agree to out Terms and Conditions our Privacy Policy explains how much we protect our  data</p>
 
           <div className="text-center">
-            <button type="submit" className="btn btn-light w-50">Log in</button>
+            <button type="submit" className="btn btn-light w-50">Sign up</button>
           </div>
           <p className="dx text-center mt-4 mb-0 small">
             Already have an XG Account? <Link to="#" className="text-white text-decoration-underline fw-bold">Login</Link>
