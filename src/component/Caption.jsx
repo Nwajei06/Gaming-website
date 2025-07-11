@@ -33,7 +33,7 @@ function Caption() {
                 <div className="frame76">
                     <img src="/images/frame76.png" alt="" />
                     <br /><br />
-                    <span>Signup to our news letter so that you can never miss out on any product,hg
+                    <span>Signup to our news letter so that you can never miss out on any product,XG
                         drops, news and exclusive offers. </span>
 
                 </div>
