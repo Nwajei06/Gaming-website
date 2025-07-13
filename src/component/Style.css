@@ -686,17 +686,27 @@ h5{
 }
 
 
-.y{
+.x {
+  width: 100%;
+}
+
+.y {
   display: flex;
   flex-direction: row;
-  /* padding: 50px; */
+  width: 100%;
 }
 
-
-.imgl{
-  width: 70%;
+.imgl {
+  width: 50%;
   height: auto;
 }
+
+.imgr {
+  width: 100%;
+  height: auto;
+
+}
+
 .vido{
   text-decoration: none;
 }
@@ -1414,17 +1424,6 @@ progress::-moz-progress-bar {
   width: 50px;
 }
 
-.y{
-  display: flex;
-  flex-direction: column;
-}
-.imgl{
-height: 435px;
-width: 100%;
-padding:20px ;
-}
-
-
 
 
 
@@ -1445,7 +1444,7 @@ padding:20px ;
 
 
 /* Tablet and Desktop Styles */
-@media (min-width: 767px ) and (max-width: 1278px)  {
+@media (min-width: 767px ) and (max-width: 1278px)  { 
   .overall{
     position: relative;
   }

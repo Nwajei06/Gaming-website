@@ -49,13 +49,14 @@ function Hero() {
                 <div className="updates">
                     
                         <div id='rowone' className="rowone">
+                        
                              <span id='ros'><img className='dd'  src="/images/codmbout.png" alt="" /> <p className='dd'> Best of 5</p>
                              
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
                              </span>
                              <span id='ros2'>
                                <span className='dd'><img  src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
-                          <span><img src="/images/orther.png" alt="" />  &nbsp; NGC</span>   
+                          <span> <Link to="/tournaments"><img src="/images/orther.png" alt="" /> </Link> &nbsp; NGC</span>   
                              </span>
                                 </div>
                         <div className="rowone">
@@ -65,7 +66,7 @@ function Hero() {
                              </span>
                              <span id='ros2'>
                                <span className='dd'><img  src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
-                          <span><img src="/images/hm1.png" alt="" /> NGC</span>   
+                          <span> <Link to="/tournaments"><img src="/images/hm1.png" alt="" /> </Link> NGC</span>   
                              </span>    
                         </div>
                         <div className="rowone">
@@ -74,12 +75,12 @@ function Hero() {
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
                              </span>
                              <span id='ros2'>
-                               <span><img src="/images/wlogo.png" alt="" /> &nbsp; XG</span> 
+                               <span> <Link to="/tournaments"><img  src="/images/wlogo.png" alt="" /> </Link> &nbsp; XG</span> 
                           <span className='dd'><img src="/images/hm1.png" alt="" />  &nbsp; NGC</span>   
                              </span>
                         </div>
                         <div className="rowone">
-                             <span id='rose'><img  src="/images/nmu.png" alt="" />
+                             <span id='rose'> <Link to="/tournaments"><img  src="/images/nmu.png" alt="" /> </Link>
                               <p className='dd'> Join our community to know what's happening</p>
                              
                              {/* <img src="/images/wwlogo.png" alt="" /> */}
@@ -89,7 +90,6 @@ function Hero() {
                           {/* <span><img src="/images/orther.png" alt="" />  &nbsp; NGC</span>    */}
                              </span>
                         </div>
-                    
                 </div>
             </div>
 
