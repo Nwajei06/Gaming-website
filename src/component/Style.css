@@ -23,7 +23,7 @@ display: flex;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  margin-top: 70px;
+  margin-top: 35px;
   }
 
 /* Timer Box */
@@ -304,13 +304,20 @@ width: 200px;
 margin-top: 20px;
 }
 .but button{
-font-size: larger;
+/* font-size: ; */
 height: auto;
+width: 100%;
+margin-right: 100px;
+
 
 
 }
 .at{
 background-color: #22251e;
+width: 30px;
+height: auto;
+display: flex;
+flex-direction: column;
 
 }
 

@@ -39,7 +39,7 @@ function Caption() {
                 </div>
                 <div className="but">
                     <button type="button" className="at btn  border-white btn-outline-light">Your email address</button>
-                    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                   
                     <Link to="/signup">  <button className="btn btn-light text-dark">Sign Up</button></Link>
 
                 </div>
