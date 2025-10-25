@@ -1,17 +1,17 @@
 // src/component/SplashOverlay.jsx
 import React, { useEffect, useState } from "react";
-import mantis from "/images/maskut.png"; // 🦗 replace with your actual image
+import mantis from "/images/maskut.png"; 
 
 const SplashOverlay = () => {
   const [fadeOut, setFadeOut] = useState(false);
   const [hide, setHide] = useState(false);
   const [typedText, setTypedText] = useState("");
-  const message = "Welcome to XtremeGang Esport"; // ✨ your message here
+  const message = "Welcome to XtremeGang Esport"; 
 
   useEffect(() => {
     // Typing effect
     let i = 0;
-    const typingSpeed = 100; // speed in ms per letter
+    const typingSpeed = 100; 
     const typeInterval = setInterval(() => {
       if (i < message.length) {
         setTypedText((prev) => prev + message[i]);
@@ -21,9 +21,8 @@ const SplashOverlay = () => {
       }
     }, typingSpeed);
 
-    // Fade and hide timers
     const fadeTimer = setTimeout(() => setFadeOut(true), 2500);
-    const hideTimer = setTimeout(() => setHide(true), 10000);
+    const hideTimer = setTimeout(() => setHide(true), 12000);
 
     return () => {
       clearInterval(typeInterval);
