@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
-import mantis from "/images/maskut.png"; // 🦗 make sure this path is correct
+import mantis from "/images/maskut.png";
 
 const SplashOverlay = () => {
   const [fadeOut, setFadeOut] = useState(false);
   const [hide, setHide] = useState(false);
   const [typedText, setTypedText] = useState("");
-  const message = "Welcome to XtremeGang Esport"; // ✨ your text
+  const message = "Welcome to XtremeGang Esport";
 
   useEffect(() => {
     let i = 0;
-    const typingSpeed = 100; // milliseconds per letter
+    const typingSpeed = 100;
 
     const typeInterval = setInterval(() => {
       setTypedText((prev) => {
-        // ✅ safely build up text, preventing "undefined"
         if (i < message.length) {
           const updatedText = prev + message.charAt(i);
           i++;
@@ -25,9 +24,8 @@ const SplashOverlay = () => {
       });
     }, typingSpeed);
 
-    // Fade and hide timers
-    const fadeTimer = setTimeout(() => setFadeOut(true), 10000);
-    const hideTimer = setTimeout(() => setHide(true), 6000); // fade then remove
+    const fadeTimer = setTimeout(() => setFadeOut(true), 5000);
+    const hideTimer = setTimeout(() => setHide(true), 5500);
 
     return () => {
       clearInterval(typeInterval);
@@ -58,28 +56,57 @@ const SplashOverlay = () => {
         opacity: fadeOut ? 0 : 1,
         color: "#fff",
         textAlign: "center",
+        padding: "0 15px", // 👈 keeps text off the edges
       }}
     >
       <img
         src={mantis}
         alt="Welcome Mantis"
         style={{
-          width: "220px",
+          width: "200px",
           animation: "wave 2s infinite ease-in-out",
           marginBottom: "20px",
         }}
       />
+
       <h2
         style={{
-          fontSize: "1.8rem",
+          fontSize: "clamp(1rem, 5vw, 1.8rem)", // 👈 responsive font size
           letterSpacing: "1px",
-          whiteSpace: "pre",
+          whiteSpace: "normal", // 👈 allows text to wrap
+          wordBreak: "break-word", // 👈 breaks long words cleanly
           fontFamily: "'Poppins', sans-serif",
+          maxWidth: "90%", // 👈 ensures it never goes off-screen
+          lineHeight: "1.3",
         }}
       >
         {typedText}
-        <span className="cursor">|</span>
+        <span
+          className="cursor"
+          style={{
+            display: "inline-block",
+            width: "2px",
+            backgroundColor: "#fff",
+            marginLeft: "3px",
+            animation: "blink 0.8s infinite",
+          }}
+        ></span>
       </h2>
+
+      {/* Cursor blink animation */}
+      <style>
+        {`
+          @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(10deg); }
+          }
+
+          @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+          }
+        `}
+      </style>
     </div>
   );
 };
