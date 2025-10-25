@@ -60,7 +60,7 @@ function Hero() {
               className="imgs"
               src="/images/orther.png"
               alt=""
-              animate={{ scale: [1, 1.1, 1], filter: ['drop-shadow(0 0 0px #ff0048)', 'drop-shadow(0 0 10px #ff0048)', 'drop-shadow(0 0 0px #ff0048)'] }}
+              animate={{ scale: [1, 1.1, 1], filter: ['drop-shadow(0 0 0px #00ff9dff)', 'drop-shadow(0 0 10px #00ff9dff)', 'drop-shadow(0 0 0px #00ff9dff)'] }}
               transition={{ repeat: Infinity, duration: 2 }}
             />
             <span className="texts">OTHERS</span>
