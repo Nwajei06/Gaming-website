@@ -1030,7 +1030,7 @@ font-size: xx-small;
 
   .vs-container {
     bottom: 50%;
-    left: 25%;
+    left: 20%;
     transform: translateX(-50%);
     gap: 25px;
     position: absolute;
@@ -1058,7 +1058,7 @@ font-size: xx-small;
 
   .framer72 {
     padding-bottom: 20%;
-    left: 40%;
+    left: 35%;
     top: 3.5%;
     position: absolute;
   }
@@ -1068,7 +1068,7 @@ font-size: xx-small;
   }
 
   .framer21 {
-    left: 25px;
+    left: 10px;
     top: 15%;
     padding-left: 0;
     padding-right: 0;
