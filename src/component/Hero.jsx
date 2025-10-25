@@ -109,7 +109,7 @@ function Hero() {
               <span>
                 <Link to="/tournaments">
                   <img src="/images/orther.png" alt="" />
-                </Link> &nbsp; NGC
+                </Link> &nbsp; NGC <span> Noob</span>
               </span>
             </span>
           </div>
@@ -125,7 +125,7 @@ function Hero() {
               <span>
                 <Link to="/tournaments">
                   <img src="/images/hm1.png" alt="" />
-                </Link> &nbsp; NGC
+                </Link> &nbsp; NGC <span> King</span>
               </span>
             </span>
           </div>
@@ -138,10 +138,10 @@ function Hero() {
               <span>
                 <Link to="/tournaments">
                   <img src="/images/wlogo.png" alt="" />
-                </Link> &nbsp; XG
+                </Link> &nbsp; XG <span> Pro</span>
               </span>
               <span className="dd">
-                <img src="/images/hm1.png" alt="" /> &nbsp; NGC
+                <img src="/images/hm1.png" alt="" /> &nbsp; NGC 
               </span>
             </span>
           </div>
@@ -151,7 +151,7 @@ function Hero() {
               <Link to="/tournaments">
                 <img src="/images/nmu.png" alt="" />
               </Link>
-              <p className="dd">Join our community to know what's happening</p>
+              <p className="dd">Join our community to know what's happening</p> <span> </span>
             </span>
           </div>
         </motion.div>
