@@ -1030,7 +1030,7 @@ font-size: xx-small;
 
   .vs-container {
     bottom: 50%;
-    left: 50%;
+    left: 27%;
     transform: translateX(-50%);
     gap: 25px;
     position: absolute;
