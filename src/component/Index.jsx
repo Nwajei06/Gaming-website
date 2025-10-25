@@ -68,7 +68,7 @@ function Index() {
                 <a href="#" className="text-white"><i className="fas fa-search"></i></a>
                 <a href="#" className="text-white"><i className="fas fa-shopping-cart"></i></a>
                 <a href="#" className="text-white"><i className="fas fa-bell"></i></a>
-                <Link to="/login"><button className="btn btn-outline-light border-white">LOGO</button></Link>
+                <Link to="/login"><button className="btn btn-outline-light border-white">Login</button></Link>
                 <Link to="/signup"><button className="btn btn-light text-dark">Sign Up</button></Link>
               </div>
             </div>

@@ -17,20 +17,20 @@ import Community from './component/Community';
 import Shop from './component/Shop';
 import Company from './component/Company';
 import Scroll from './component/Scroll';
+import SplashOverlay from './component/SplashOverlay'; // ✅ add this
+
 function App() {
-
-
   return (
     <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', paddingLeft:'10px',paddingRight:'20px'}}>
-        <Index />
-        <Scroll/>
+      <SplashOverlay /> {/* ✅ show mantis overlay first */}
+      <Index />
+      <Scroll/>
 
       <Routes>
-    <Route 
+        <Route 
           path="/" 
           element={
             <>
-            
               <Hero /> 
               <Submerch />
               <Sponsorslogo />
@@ -38,7 +38,6 @@ function App() {
               <Recentvedios />
             </>
           } 
-        
         />
         <Route path="login" element={<Login/>}/>
         <Route path="signup" element={<Signup/>}/>
@@ -48,7 +47,6 @@ function App() {
         <Route path="company" element={<Company/>}/>
         <Route path="shop" element={<Shop/>}/>
       </Routes>
-     
     </div>
   );
 }
