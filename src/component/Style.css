@@ -1,3 +1,57 @@
+
+/* --- Prevent horizontal overflow and make media responsive --- */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+/* Hide accidental horizontal overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
+/* Media should never overflow its container */
+img, picture, video, iframe, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Common offenders to replace 100vw usage */
+.full-width {
+  width: 100%; /* avoid 100vw which can overflow due to scrollbars */
+}
+
+/* Make fixed corner elements visually offset without affecting layout */
+.fixed-corner { position: fixed; right: 0; top: 0; transform: translateZ(0); }
+
+/* Optional: prevent inner element from creating horizontal scroll */
+.container, .page, .main, .hs-inner {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .overall{
 display: flex;
   flex-direction: row;
