@@ -1,38 +1,40 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
-
-
-function HighlightsSection() {
+export default function HighlightsSection() {
   const cards = [
     {
       id: "legends-text",
       type: "text",
-      title: "We create legends.",
-      subtitle: null,
+      title: (
+        <>
+          We create <span className="text-green">Legends.</span>
+        </>
+      ),
       text:
         "XG scouted and developed many of the pros who are now recognised among the greatest esports players in Nigeria. We're constantly advancing our abilities to find and build the legends of tomorrow.",
-      img: null,
     },
     {
       id: "legends-img",
       type: "image",
-      img: "/images/t-codsection.png",
+      img: "/images/t-throphys.png",
       alt: "hands holding phone gaming",
     },
     {
       id: "trophy-img",
       type: "image",
-      img: "/images/t-throphys.png",
+      img: "/images/t-codsection.png",
       alt: "trophy",
     },
     {
       id: "merch-text",
       type: "text",
-      title: "We Create Merch.",
+      title: (
+        <>
+          We Create <span className="text-green">Merch.</span>
+        </>
+      ),
       text:
         "At XG, we don't just build gear, we build your advantage. Every click, kit, and component is designed with precision — made for pro gamers, streamers, and everyday legends alike.",
-      img: null,
     },
   ];
 
@@ -44,7 +46,8 @@ function HighlightsSection() {
           <div className="hs-join-left">
             <div className="hs-join-title">JOIN THE GANG</div>
             <div className="hs-join-sub">
-              Sign up to our newsletter so you never miss out on product drops, news and exclusive offers.
+              Sign up to our newsletter so you never miss out on product drops,
+              news and exclusive offers.
             </div>
           </div>
 
@@ -55,10 +58,9 @@ function HighlightsSection() {
               placeholder="Your email address"
               aria-label="email"
             />
-         <NavLink to="/signup">  <button type="submit" className="hs-btn">
+            <button type="submit" className="hs-btn">
               Sign up
             </button>
-            </NavLink> 
           </form>
         </div>
 
@@ -81,5 +83,3 @@ function HighlightsSection() {
     </section>
   );
 }
-
-export default  HighlightsSection;
