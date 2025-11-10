@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./component/Style.css"
+import "./component/t-style.css"
 import Hero from './component/Hero';
 import Index from './component/Index';
 import Submerch from './component/Submerch';
