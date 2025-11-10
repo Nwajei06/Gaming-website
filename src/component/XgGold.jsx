@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 
 
 function XgGold() {
@@ -20,8 +22,8 @@ function XgGold() {
           </div>
 
           <div className="xggold-buttons">
-            <button className="xg-btn primary">Log in</button>
-            <button className="xg-btn outline">FAQs</button>
+           <NavLink to="/login"><button className="xg-btn primary">Log in</button> </NavLink> 
+         <NavLink to="/">  <button className="xg-btn outline">FAQs</button> </NavLink> 
           </div>
         </div>
 

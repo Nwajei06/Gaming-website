@@ -124,12 +124,30 @@
 }
 
 /* === POP-UP ENTRANCE ANIMATION WITH 5s DELAY === */
-.fr-widget {
-  opacity: 0;
-  transform: scale(0.7) translateY(20px);
-  animation: popIn 1.1s cubic-bezier(0.19, 1, 0.22, 1) 5s forwards;
-  /* delay is now 5 seconds */
+/* keep widget non-interactive overall to allow clicks through except explicit links */
+.fr-widget { pointer-events: none; }
+
+/* enable the nav link area to receive pointer events */
+.fr-link,
+.fr-tag-link {
+  pointer-events: auto;         /* allow clicks on this element */
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;              /* show pointer on hover */
 }
+
+/* ensure inner images/rendered elements don't block the link */
+.fr-link img,
+.fr-link .fr-flag,
+.fr-tag-link .fr-tag {
+  pointer-events: none; /* children won't steal pointer from the link itself */
+}
+
+/* optional hover style */
+.fr-link:hover .fr-mascot-img,
+.fr-tag-link:hover .fr-tag { transform: translateY(-3px); transition: transform .18s ease; }
+
 
 @keyframes popIn {
   0% {

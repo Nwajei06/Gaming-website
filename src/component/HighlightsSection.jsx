@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 export default function HighlightsSection() {
   const cards = [
     {
@@ -58,9 +58,11 @@ export default function HighlightsSection() {
               placeholder="Your email address"
               aria-label="email"
             />
+            <NavLink to="/signup">
             <button type="submit" className="hs-btn">
               Sign up
             </button>
+            </NavLink>
           </form>
         </div>
 
