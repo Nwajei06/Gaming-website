@@ -31,7 +31,7 @@ function Scroll() {
           style={{
             position: "fixed",
             bottom: "30px",
-            right: "30px",
+            left: "30px",
             // padding: "10px 15px",
             backgroundColor: "transparent",
             color: "#fff",

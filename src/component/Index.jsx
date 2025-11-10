@@ -22,12 +22,13 @@ function Index() {
     { name: "Tournament", path: "/tournaments" },
     { name: "Company", path: "/company" },
     { name: "Shop", path: "/shop" },
+    { name: "Gold", path: "/xg-gold" },
   ];
 
   return (
     <>
       {/* ✅ Updated class below */}
-      <nav className="navbar navbar-expand-md custom-navbar">
+      <nav className="navbar navbar-expand-md custom-navbar ">
         <div className="container-fluid position-relative">
 
           {/* Mobile: Hamburger + Search */}

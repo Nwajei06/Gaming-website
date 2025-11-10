@@ -389,3 +389,78 @@ font-size: small;
     min-width:0; 
   }
 }
+
+
+/* Tablets and iPads (landscape & portrait) */
+@media (max-width: 1024px) {
+  .t-imghead img {
+    width: 600px;
+  }
+
+  .div-codmbout img {
+    width: 350px;
+  }
+
+  .t-text-head {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 40px;
+  }
+   .thero {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .thero img {
+    width: 50%;
+    max-width: 450px;
+  }
+}
+
+/* Phones (portrait & small screens) */
+@media (max-width: 600px) {
+  .company {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div-codmbout {
+    margin-top: 20%;
+  }
+
+  .div-codmbout img {
+    width: 250px;
+  }
+
+  .t-imghead {
+    margin-top: 10%;
+  }
+
+  .t-imghead img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .t-text-head {
+    margin-top: 8%;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .t-text-head span {
+    color: #00ff66; /* optional highlight */
+    font-weight: 600;
+  }
+
+  .thero {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .thero img {
+    width: 80%;
+    max-width: 320px;
+  }
+}

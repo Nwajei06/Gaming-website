@@ -4,6 +4,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./component/Style.css"
 import "./component/t-style.css"
+import "./component/Xg-style.css"
+import "./component/FlagRaiser.css"
 import Hero from './component/Hero';
 import Index from './component/Index';
 import Submerch from './component/Submerch';
@@ -19,13 +21,18 @@ import Shop from './component/Shop';
 import Company from './component/Company';
 import Scroll from './component/Scroll';
 import SplashOverlay from './component/SplashOverlay'; // ✅ add this
+import XgGold from './component/XgGold';
+import FlagRaiser from './component/FlagRaiser';
 
 function App() {
   return (
     <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', paddingLeft:'10px',paddingRight:'20px'}}>
       <SplashOverlay /> {/* ✅ show mantis overlay first */}
       <Index />
+<FlagRaiser/>
       <Scroll/>
+
+    
 
       <Routes>
         <Route 
@@ -37,6 +44,7 @@ function App() {
               <Sponsorslogo />
               <Caption />
               <Recentvedios />
+
             </>
           } 
         />
@@ -47,6 +55,7 @@ function App() {
         <Route path="community" element={<Community/>}/>
         <Route path="company" element={<Company/>}/>
         <Route path="shop" element={<Shop/>}/>
+        <Route path="xg-gold" element={<XgGold/>}/>
       </Routes>
     </div>
   );
